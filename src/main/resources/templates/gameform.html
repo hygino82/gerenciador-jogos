@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Lista de Jogos</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+	<div th:if="${mensagem}" th:text="${mensagem}"></div>
+	
+	<div class="container">
+		<form action="/game/form/save" method="POST">
+			Nome: <input type="text" id="name" name="name" />
+			<br>
+			Console: <select name="console">
+				<option th:each="console : ${consolelist}" 
+						th:value="${console.id}" 
+						th:text="${console.name}" />					
+			</select>
+			<br>
+			Ano: <input type="number" id ="year" name="year"/>
+			<br>
+			Código: <input type="text" name="personalCode" id="personalCode"/>
+			<br>
+			Link da imagem:<input type="text" name="imageUrl" id="imageUrl"/>
+			<br>
+		<button type="submit">Salvar Jogo</button>
+		</form>
+	</div>
+</body>
+
+</html>
