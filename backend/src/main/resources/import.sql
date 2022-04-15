@@ -12,3 +12,9 @@ INSERT INTO tb_console(name) VALUES('Playstation 4');
 INSERT INTO tb_console(name) VALUES('Playstation 5');
 INSERT INTO tb_console(name) VALUES('Xbox 360');
 INSERT INTO tb_console(name) VALUES('Xbox One');
+
+INSERT INTO tb_games(name, console_id, personal_code, media_type) VALUES('Skyrim', 10, 'BLUS31202S', 'BluRay');
+INSERT INTO tb_games(name, console_id, personal_code, media_type) VALUES('Call of Duty Black Ops 1', 10, 'BLUS90162', 'BluRay');
+INSERT INTO tb_games(name, console_id, personal_code, media_type) VALUES('Call of Duty Black Ops 2', 10, 'BLUS31141', 'BluRay');
+INSERT INTO tb_games(name, console_id, personal_code, media_type) VALUES('Call of Duty Infinite Warfare', 11, '2102311', 'BluRay');
+INSERT INTO tb_games(name, console_id, personal_code, media_type) VALUES('Pay Day 2', 11, 'CUSA01770SA', 'BluRay');
