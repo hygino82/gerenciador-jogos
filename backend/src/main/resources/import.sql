@@ -1,0 +1,14 @@
+INSERT INTO tb_console(name) VALUES('Nintendo');
+INSERT INTO tb_console(name) VALUES('Super Nintendo');
+INSERT INTO tb_console(name) VALUES('Nintendo 64');
+INSERT INTO tb_console(name) VALUES('Master System');
+INSERT INTO tb_console(name) VALUES('Mega Drive');
+INSERT INTO tb_console(name) VALUES('Sega CD');
+INSERT INTO tb_console(name) VALUES('Sega 32X');
+INSERT INTO tb_console(name) VALUES('Playstation 1');
+INSERT INTO tb_console(name) VALUES('Playstation 2');
+INSERT INTO tb_console(name) VALUES('Playstation 3');
+INSERT INTO tb_console(name) VALUES('Playstation 4');
+INSERT INTO tb_console(name) VALUES('Playstation 5');
+INSERT INTO tb_console(name) VALUES('Xbox 360');
+INSERT INTO tb_console(name) VALUES('Xbox One');
