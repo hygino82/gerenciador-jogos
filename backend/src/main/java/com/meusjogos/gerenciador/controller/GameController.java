@@ -45,4 +45,10 @@ public class GameController {
     public List<GameDTO> findAllGamesByConsoleName(@PathVariable String consoleName){
         return gameService.findAllGamesByConsoleName(consoleName);
     }
+
+    @GetMapping("/media/{mediaType}")
+    @ApiOperation(value = "Listar todos os jogos pelo tipo de mídia")
+    public List<GameDTO> findAllByMediaType(@PathVariable String mediaType){
+        return gameService.findAllByMediaType(mediaType);
+    }
 }

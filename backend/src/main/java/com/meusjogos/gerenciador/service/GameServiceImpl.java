@@ -68,4 +68,10 @@ public class GameServiceImpl implements GameService {
 
         return gameList.stream().map(GameDTO::new).collect(Collectors.toList());
     }
+
+    @Override
+    public List<GameDTO> findAllByMediaType(String mediaType) {
+        var gameList = gameRepository.findAllByMediaTypeIgnoreCase(mediaType);
+        return gameList.stream().map(GameDTO::new).collect(Collectors.toList());
+    }
 }

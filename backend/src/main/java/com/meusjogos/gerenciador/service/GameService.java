@@ -14,4 +14,6 @@ public interface GameService {
     GameDTO saveNewGame(GameDTO gameDTO);
 
     List<GameDTO> findAllGamesByConsoleName(String consoleName);
+
+    List<GameDTO> findAllByMediaType(String mediaType);
 }

@@ -18,3 +18,9 @@ INSERT INTO tb_games(name, console_id, personal_code, media_type) VALUES('Call o
 INSERT INTO tb_games(name, console_id, personal_code, media_type) VALUES('Call of Duty Black Ops 2', 10, 'BLUS31141', 'BluRay');
 INSERT INTO tb_games(name, console_id, personal_code, media_type) VALUES('Call of Duty Infinite Warfare', 11, '2102311', 'BluRay');
 INSERT INTO tb_games(name, console_id, personal_code, media_type) VALUES('Pay Day 2', 11, 'CUSA01770SA', 'BluRay');
+INSERT INTO tb_games(name, console_id, personal_code, media_type) VALUES('Comix Zone', 5, 'Mega1995', 'Cartridge');
+INSERT INTO tb_games(name, console_id, personal_code, media_type) VALUES('Mortal Kombat 2', 5, 'MegaMK2', 'Cartridge');
+INSERT INTO tb_games(name, console_id, personal_code, media_type) VALUES('Gran Turismo 2', 8, 'BLUS-GT2', 'CD');
+INSERT INTO tb_games(name, console_id, personal_code, media_type) VALUES('Need For Speed III - Hot Porsuit', 8, 'BLUS-GT2', 'CD');
+INSERT INTO tb_games(name, console_id, personal_code, media_type) VALUES('Gran Turismo 4', 9, 'BLUS-GT2', 'DVD');
+INSERT INTO tb_games(name, console_id, personal_code, media_type) VALUES('Devil May Cry', 9, 'DMC-PS2', 'DVD');
