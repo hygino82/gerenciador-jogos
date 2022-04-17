@@ -13,7 +13,6 @@ public class GameDTO {
     private Long id;
     private String name;
     private String consoleName;
-
     private Long consoleId;
     private String personalCode;
     private String mediaType;

@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 
 @Service
@@ -59,5 +60,12 @@ public class GameServiceImpl implements GameService {
         gameRepository.save(game);
 
         return new GameDTO(game);
+    }
+
+    @Override
+    public List<GameDTO> findAllGamesByConsoleName(String consoleName) {
+        var gameList = gameRepository.findAllByConsoleNameIgnoreCase(consoleName);
+
+        return gameList.stream().map(GameDTO::new).collect(Collectors.toList());
     }
 }

@@ -39,4 +39,10 @@ public class GameController {
     public void deleteGameById(@PathVariable long id) {
         gameService.deleteGameById(id);
     }
+
+    @GetMapping("/console/{consoleName}")
+    @ApiOperation(value = "Listar todos os jogos")
+    public List<GameDTO> findAllGamesByConsoleName(@PathVariable String consoleName){
+        return gameService.findAllGamesByConsoleName(consoleName);
+    }
 }

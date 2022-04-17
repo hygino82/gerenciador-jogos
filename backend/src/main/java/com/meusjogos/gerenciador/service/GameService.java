@@ -12,4 +12,6 @@ public interface GameService {
     void deleteGameById(long id);
 
     GameDTO saveNewGame(GameDTO gameDTO);
+
+    List<GameDTO> findAllGamesByConsoleName(String consoleName);
 }
