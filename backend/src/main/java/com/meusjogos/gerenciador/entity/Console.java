@@ -1,15 +1,12 @@
 package com.meusjogos.gerenciador.entity;
 
+import com.meusjogos.gerenciador.dto.ConsoleDTO;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import javax.persistence.Id;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import java.io.Serial;
 import java.io.Serializable;
@@ -30,4 +27,8 @@ public class Console implements Serializable {
 
     @NotBlank
     private String name;
+
+    public Console(ConsoleDTO consoleDTO) {
+        name = consoleDTO.getName();
+    }
 }

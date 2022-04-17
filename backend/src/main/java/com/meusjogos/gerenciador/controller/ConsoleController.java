@@ -1,5 +1,6 @@
 package com.meusjogos.gerenciador.controller;
 
+import com.meusjogos.gerenciador.dto.ConsoleDTO;
 import com.meusjogos.gerenciador.entity.Console;
 import com.meusjogos.gerenciador.service.ConsoleService;
 import io.swagger.annotations.ApiOperation;
@@ -18,9 +19,8 @@ public class ConsoleController {
 
     @PostMapping
     @ApiOperation(value = "Salvar um console")
-    public Console saveNewConsole(@RequestBody Console console) {
-        return consoleService.saveNewConsole(console);
-
+    public Console saveNewConsole(@RequestBody ConsoleDTO consoleDTO) {
+        return consoleService.saveNewConsole(consoleDTO);
     }
 
     @GetMapping

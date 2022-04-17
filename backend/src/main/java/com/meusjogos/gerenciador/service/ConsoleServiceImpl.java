@@ -1,5 +1,6 @@
 package com.meusjogos.gerenciador.service;
 
+import com.meusjogos.gerenciador.dto.ConsoleDTO;
 import com.meusjogos.gerenciador.entity.Console;
 import com.meusjogos.gerenciador.repository.ConsoleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,7 +41,11 @@ public class ConsoleServiceImpl implements ConsoleService {
     }
 
     @Override
-    public Console saveNewConsole(Console console) {
-        return consoleRepository.save(console);
+    public Console saveNewConsole(ConsoleDTO consoleDTO) {
+        return consoleRepository.save(new Console(consoleDTO));
+    }
+
+    public boolean existsByName(String name) {
+        return consoleRepository.existsByName(name);
     }
 }
