@@ -47,4 +47,10 @@ public class ConsoleController {
     public void updateConsoleById(@PathVariable long id, @RequestBody Console console) {
         consoleService.updateConsoleById(id, console);
     }
+
+    @GetMapping("name/{name}")
+    @ApiOperation(value = "Procurar um console pelo seu Nome")
+    public List<Console> findConsoleByName(@PathVariable String name) {
+        return consoleService.findConsoleByName(name);
+    }
 }

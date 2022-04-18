@@ -6,6 +6,7 @@ import com.meusjogos.gerenciador.repository.ConsoleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -47,5 +48,10 @@ public class ConsoleServiceImpl implements ConsoleService {
 
     public boolean existsByName(String name) {
         return consoleRepository.existsByName(name);
+    }
+
+    @Override
+    public List<Console> findConsoleByName(String name) {
+        return consoleRepository.findAllByNameStartsWithIgnoreCase(name);
     }
 }

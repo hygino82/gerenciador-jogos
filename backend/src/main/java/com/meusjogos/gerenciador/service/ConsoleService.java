@@ -16,4 +16,6 @@ public interface ConsoleService {
     Console saveNewConsole(ConsoleDTO consoleDTO);
 
     boolean existsByName(String name);
+
+    List<Console> findConsoleByName(String name);
 }
