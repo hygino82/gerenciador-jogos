@@ -52,6 +52,6 @@ public class ConsoleServiceImpl implements ConsoleService {
 
     @Override
     public List<Console> findConsoleByName(String name) {
-        return consoleRepository.findAllByNameStartsWithIgnoreCase(name);
+        return consoleRepository.findAllByNameIgnoreCase(name);
     }
 }

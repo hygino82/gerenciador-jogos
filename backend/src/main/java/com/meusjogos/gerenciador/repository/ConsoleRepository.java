@@ -11,4 +11,6 @@ public interface ConsoleRepository extends JpaRepository<Console, Long> {
     boolean existsByName(String name);
     List<Console> findAllByNameContainsIgnoreCase(String name);
     List<Console> findAllByNameStartsWithIgnoreCase(String name);
+    List<Console> findAllByNameContains(String name);
+    List<Console> findAllByNameIgnoreCase(String name);
 }
