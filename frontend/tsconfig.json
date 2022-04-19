@@ -1,4 +1,5 @@
 {
+  "baseUrl":"./src",//base dos pacotes
   "compilerOptions": {
     "target": "es5",
     "lib": [
