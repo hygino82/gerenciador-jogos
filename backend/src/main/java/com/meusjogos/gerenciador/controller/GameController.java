@@ -10,7 +10,7 @@ import javax.transaction.Transactional;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/game")
+@RequestMapping("/api/games")
 public class GameController {
     @Autowired
     private GameService gameService;

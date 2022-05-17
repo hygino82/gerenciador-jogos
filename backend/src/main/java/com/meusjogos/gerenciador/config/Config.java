@@ -40,7 +40,7 @@ public class Config {
     }
 
     @Bean
-    private ModelMapper modelMapper(){
+    public ModelMapper modelMapper(){
         return new ModelMapper();
     }
 }
