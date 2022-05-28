@@ -1,0 +1,14 @@
+INSERT INTO tb_console(name, created_At) VALUES('Nintendo', NOW());
+INSERT INTO tb_console(name, created_At) VALUES('Super Nintendo', NOW());
+INSERT INTO tb_console(name, created_At) VALUES('Nintendo 64', NOW());
+INSERT INTO tb_console(name, created_At) VALUES('Master System', NOW());
+INSERT INTO tb_console(name, created_At) VALUES('Mega Drive', NOW());
+INSERT INTO tb_console(name, created_At) VALUES('Sega CD', NOW());
+INSERT INTO tb_console(name, created_At) VALUES('Sega 32X', NOW());
+INSERT INTO tb_console(name, created_At) VALUES('Playstation 1', NOW());
+INSERT INTO tb_console(name, created_At) VALUES('Playstation 2', NOW());
+INSERT INTO tb_console(name, created_At) VALUES('Playstation 3', NOW());
+INSERT INTO tb_console(name, created_At) VALUES('Playstation 4', NOW());
+INSERT INTO tb_console(name, created_At) VALUES('Playstation 5', NOW());
+INSERT INTO tb_console(name, created_At) VALUES('Xbox 360', NOW());
+INSERT INTO tb_console(name, created_At) VALUES('Xbox One', NOW());
