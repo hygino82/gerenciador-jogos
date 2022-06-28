@@ -1,16 +1,21 @@
 package com.meusjogos.gerenciador.repository;
 
-import com.meusjogos.gerenciador.entity.Console;
+import java.util.List;
+
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
+import com.meusjogos.gerenciador.entity.Console;
 
 @Repository
 public interface ConsoleRepository extends JpaRepository<Console, Long> {
-    boolean existsByName(String name);
-    List<Console> findAllByNameContainsIgnoreCase(String name);
-    List<Console> findAllByNameStartsWithIgnoreCase(String name);
-    List<Console> findAllByNameContains(String name);
-    List<Console> findAllByNameIgnoreCase(String name);
+    
+	boolean existsByName(String name);
+    List<Console> findAllByNameContainingIgnoreCase(String name);
+    
+    @Query(nativeQuery = true, value ="SELECT console.id, console.name "
+    		+ "FROM tb_console AS console "
+    		+ "WHERE UPPER(console.name) LIKE %UPPER(:name)%")
+    List<Console> buscarPorNome(String name);
 }
