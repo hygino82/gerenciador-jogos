@@ -1,0 +1,1 @@
+INSERT INTO tb_game(name, console, media, personal_code, image_url, video_url, create_date, update_date)  VALUES ('COMIX ZONE',3,1,'COMIX Mega','https://files.meiobit.com/wp-content/uploads/2022/09/comix-zone-03.jpg','https://www.youtube.com/watch?v=fQld-pqNUHo',NOW(),NOW());
